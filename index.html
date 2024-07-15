@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizon Duct Cleaning</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/hdc-header.png" alt="Horizon Duct Cleaning Logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="industrial.html">Industrial</a></li>
+          <li><a href="residential.html">Residential</a></li>
+          <li><a href="commercial.html">Commercial</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2>Welcome to Horizon Duct Cleaning</h2>
+        <p>Because YOUR air quality is important!</p>
+        <button onclick="bookAppointment()">Book Appointment</button>
+      </section>
+
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+          <h3>Industrial</h3>
+          <p>We provide top-notch industrial duct cleaning services.</p>
+        </div>
+        <div class="service">
+          <h3>Residential</h3>
+          <p>Ensuring clean air in your home with our residential services.</p>
+        </div>
+        <div class="service">
+          <h3>Commercial</h3>
+          <p>Reliable and efficient commercial duct cleaning services.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Phone: <a href="tel:+15194536738">519-453-6738</a> | Fax:
+        <a href="fax:+15196442300">519-644-2300</a> | Email:
+        <a href="mailto:horizonduct@sympatico.ca">horizonduct@sympatico.ca</a>
+      </p>
+      <p>Fully insured</p>
+    </footer>
+
+    <script>
+      function bookAppointment() {
+        window.location.href = "contact.html";
+      }
+    </script>
+  </body>
+</html>

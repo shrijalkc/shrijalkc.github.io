@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Horizon Duct Cleaning</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/hdc-header.png" alt="Horizon Duct Cleaning Logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="industrial.html">Industrial</a></li>
+          <li><a href="residential.html">Residential</a></li>
+          <li><a href="commercial.html">Commercial</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="send_email.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Phone: <a href="tel:+15194536738">519-453-6738</a> | Fax:
+        <a href="fax:+15196442300">519-644-2300</a> | Email:
+        <a href="mailto:horizonduct@sympatico.ca">horizonduct@sympatico.ca</a>
+      </p>
+      <p>Fully insured</p>
+    </footer>
+  </body>
+</html>

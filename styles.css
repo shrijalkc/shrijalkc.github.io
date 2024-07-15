@@ -1,0 +1,163 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #005b96; /* Dark Blue */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+nav ul li a:hover {
+    background-color: #b8860b; /* Darker Tan */
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+#services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.service {
+    border: 1px solid #d2b48c; /* Tan (light brown) */
+    background-color: #fff;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #005b96; /* Dark Blue */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+footer a{
+    color: #fff;
+}
+
+button {
+    background-color: #d2b48c; /* Tan (light brown) */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b8860b; /* Darker Tan */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 0.5em 0;
+    }
+    #services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 0.5em 0;
+    }
+    #services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service {
+        width: 90%;
+    }
+}
+
+/* Contact Form Alignment */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label, form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    align-self: center;
+    width: auto;
+}
