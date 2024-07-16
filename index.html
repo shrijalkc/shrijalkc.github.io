@@ -8,8 +8,8 @@
   </head>
   <body>
     <header>
-      <img src="hdc-header.png" alt="Horizon Duct Cleaning Logo" />
       <nav>
+        <img src="images/hdc-header.png" alt="Horizon Duct Cleaning Logo" />
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="industrial.html">Industrial</a></li>
@@ -23,24 +23,54 @@
     <main>
       <section id="home">
         <h2>Welcome to Horizon Duct Cleaning</h2>
-        <p>Because YOUR air quality is important!</p>
+        <p>
+          Because <span class="highlight">YOUR</span> air quality is important!
+        </p>
         <button onclick="bookAppointment()">Book Appointment</button>
       </section>
 
       <section id="services">
         <h2>Our Services</h2>
-        <div class="service">
-          <h3>Industrial</h3>
-          <p>We provide top-notch industrial duct cleaning services.</p>
+        <div class="service-container">
+          <div class="service">
+            <h3>Industrial</h3>
+            <p>We provide top-notch industrial duct cleaning services.</p>
+          </div>
+          <div class="service">
+            <h3>Residential</h3>
+            <p>
+              Ensuring clean air in your home with our residential services.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Commercial</h3>
+            <p>Reliable and efficient commercial duct cleaning services.</p>
+          </div>
         </div>
-        <div class="service">
-          <h3>Residential</h3>
-          <p>Ensuring clean air in your home with our residential services.</p>
+      </section>
+
+      <section id="facts">
+        <h2>Did You Know?</h2>
+        <div class="fact">
+          <p>Duct cleaning can improve air quality and reduce allergens.</p>
         </div>
-        <div class="service">
-          <h3>Commercial</h3>
-          <p>Reliable and efficient commercial duct cleaning services.</p>
+        <div class="fact">
+          <p>Regular duct cleaning can increase HVAC efficiency.</p>
         </div>
+        <div class="fact">
+          <p>Dust and debris in ducts can reduce airflow by up to 30%.</p>
+        </div>
+      </section>
+
+      <section id="book">
+        <h2>Book with us now</h2>
+        <form action="https://formspree.io/your@email.com" method="POST">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="_replyto" required />
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="body" required></textarea>
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
 
